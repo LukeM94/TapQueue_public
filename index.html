@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TapQueue | Effortless Queue Management</title>
+    <meta name="description" content="TapQueue helps businesses streamline customer experiences with QR-powered queue management. Simple, flexible, and effective.">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <script>
-        // Toggle dark mode based on user preference
         function toggleDarkMode() {
             document.documentElement.classList.toggle('dark');
             localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
         }
-        // Load dark mode state on page load
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
         } else {
@@ -21,7 +21,7 @@
     </script>
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
@@ -31,10 +31,15 @@
         <div class="max-w-5xl mx-auto text-center">
             <h1 class="text-4xl md:text-6xl font-bold">Effortless Queue Management. Simplified.</h1>
             <p class="mt-4 text-lg md:text-2xl">TapQueue helps businesses streamline customer experiences with QR-powered queues.</p>
-            <div class="mt-8 space-x-4">
-                <a href="#signup" class="bg-white text-blue-600 px-6 py-3 rounded-full text-lg font-semibold shadow hover:bg-gray-200 dark:bg-gray-800 dark:text-white">Get Started</a>
-                <a href="#features" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 dark:hover:text-gray-800">Learn More</a>
-            </div>
+        </div>
+    </section>
+
+    <section class="py-10 px-6 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">Why TapQueue?</h2>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+                Managing queues can be chaotic, leading to frustrated customers and overwhelmed staff. TapQueue streamlines the process, offering a simple, QR-powered solution that keeps everyone happy and organised.
+            </p>
         </div>
     </section>
 
@@ -44,15 +49,27 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white dark:bg-gray-800 shadow-md p-6 rounded-lg">
                     <h3 class="text-xl font-semibold">Simple QR Codes</h3>
-                    <p class="mt-2 text-gray-600 dark:text-gray-400">Scan and join a queue in seconds.</p>
+                    <ul class="mt-2 text-gray-600 dark:text-gray-400 list-disc list-inside">
+                        <li>Custom QR codes for each queue.</li>
+                        <li>Easy to set up and share.</li>
+                        <li>No app download required for customers.</li>
+                    </ul>
                 </div>
                 <div class="bg-white dark:bg-gray-800 shadow-md p-6 rounded-lg">
                     <h3 class="text-xl font-semibold">Customisable Experience</h3>
-                    <p class="mt-2 text-gray-600 dark:text-gray-400">Tailor queues to fit your business needs.</p>
+                    <ul class="mt-2 text-gray-600 dark:text-gray-400 list-disc list-inside">
+                        <li>Tailor queues to your business needs.</li>
+                        <li>Fully configurable queue settings.</li>
+                        <li>Supports multiple locations.</li>
+                    </ul>
                 </div>
                 <div class="bg-white dark:bg-gray-800 shadow-md p-6 rounded-lg">
                     <h3 class="text-xl font-semibold">Real-time Insights</h3>
-                    <p class="mt-2 text-gray-600 dark:text-gray-400">Monitor and manage your queues effortlessly.</p>
+                    <ul class="mt-2 text-gray-600 dark:text-gray-400 list-disc list-inside">
+                        <li>Track queue status live.</li>
+                        <li>Access actionable data for optimisation.</li>
+                        <li>Receive real-time notifications.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -81,8 +98,18 @@
         </div>
     </section>
 
+    <section id="cta" class="bg-blue-600 dark:bg-blue-700 text-white py-10 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold">Ready to Revolutionise Your Queue?</h2>
+            <p class="mt-4 text-lg">Follow us on X, Instagram, and Bluesky for updates.</p>
+            <div class="mt-6">
+                <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-full text-lg font-semibold shadow hover:bg-gray-200 dark:bg-gray-800 dark:text-white">Get Updates</a>
+            </div>
+        </div>
+    </section>
+
     <footer class="bg-gray-800 dark:bg-gray-900 text-white py-6 text-center">
-        <p>&copy; 2024 TapQueue. Built with ❤️ by TapQueue in ☘️</p>
+        <p>&copy; 2024 TapQueue. Built with ❤️ in ☘️</p>
     </footer>
 </body>
 </html>
